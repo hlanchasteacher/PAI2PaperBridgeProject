@@ -9,7 +9,6 @@
     <style>
         body {
             font-family: 'Nunito', sans-serif;
-            background-color: #f0fdfa; /* Light teal background */
             color: #1e293b;
         }
         .step-container {
@@ -31,20 +30,21 @@
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col items-center justify-center p-4">
+<!-- Added transition-colors so the background shifts smoothly between steps -->
+<body class="min-h-screen flex flex-col items-center justify-center p-4 bg-teal-50 transition-colors duration-700">
 
     <!-- Progress Bar -->
     <div class="w-full max-w-4xl mb-8">
-        <div class="flex justify-between mb-2 text-lg font-bold text-teal-700" id="progress-text">
+        <div class="flex justify-between mb-2 text-lg font-bold text-gray-700" id="progress-text">
             <span>Step 1 of 7</span>
         </div>
-        <div class="w-full bg-gray-300 rounded-full h-4">
-            <div class="bg-teal-600 h-4 rounded-full transition-all duration-500" id="progress-bar" style="width: 14.28%"></div>
+        <div class="w-full bg-gray-300 rounded-full h-4 shadow-inner">
+            <div class="bg-gray-800 h-4 rounded-full transition-all duration-500" id="progress-bar" style="width: 14.28%"></div>
         </div>
     </div>
 
     <!-- Main Content Container -->
-    <div class="bg-white rounded-3xl shadow-xl w-full max-w-4xl p-8 md:p-12 border-t-8 border-teal-500">
+    <div class="bg-white rounded-3xl shadow-xl w-full max-w-4xl p-8 md:p-12 border-t-8 border-gray-800">
         
         <!-- STEP 1: Introduction -->
         <div id="step-1" class="step-container step-active">
@@ -72,7 +72,7 @@
             <div class="text-2xl leading-relaxed text-gray-700 space-y-6">
                 <p>Great structures are built by great teams.</p>
                 <p>For this project, you can choose how you want to work:</p>
-                <ul class="list-disc pl-10 space-y-3 font-bold text-teal-700">
+                <ul class="list-disc pl-10 space-y-3 font-bold text-blue-700">
                     <li>Individually (Solo)</li>
                     <li>In pairs (2 people)</li>
                     <li>In a group of maximum 3 people</li>
@@ -94,8 +94,8 @@
             <div class="text-xl md:text-2xl leading-relaxed text-gray-700 space-y-6">
                 <p><strong>Goal:</strong> Find out how much pulling force the material can take before it rips. This is important for suspension cables.</p>
                 
-                <div class="bg-gray-50 p-6 rounded-xl border-2 border-gray-200">
-                    <h3 class="font-bold text-2xl text-teal-800 mb-4">Instructions:</h3>
+                <div class="bg-amber-50 p-6 rounded-xl border-2 border-amber-200">
+                    <h3 class="font-bold text-2xl text-amber-900 mb-4">Instructions:</h3>
                     <ol class="list-decimal pl-6 space-y-4">
                         <li>Cut a strip of your material exactly <strong>3 cm wide and 15 cm long</strong>.</li>
                         <li>Tape the top edge of the strip securely to the edge of your desk.</li>
@@ -104,8 +104,8 @@
                     </ol>
                 </div>
 
-                <div class="bg-red-50 border-l-8 border-red-500 p-6 rounded-lg mt-8">
-                    <p class="font-bold text-red-800 text-2xl">📝 What to record:</p>
+                <div class="bg-white border-l-8 border-gray-800 shadow-md p-6 rounded-lg mt-8">
+                    <p class="font-bold text-gray-800 text-2xl">📝 What to record:</p>
                     <p class="mt-2">Count the exact number of weights the paper held <strong>just before it broke</strong>. Write this number down in your draft table!</p>
                 </div>
             </div>
@@ -120,8 +120,8 @@
             <div class="text-xl md:text-2xl leading-relaxed text-gray-700 space-y-6">
                 <p><strong>Goal:</strong> Find out how much weight the material can support from above before it crushes. This is important for bridge pillars.</p>
                 
-                <div class="bg-gray-50 p-6 rounded-xl border-2 border-gray-200">
-                    <h3 class="font-bold text-2xl text-teal-800 mb-4">Instructions:</h3>
+                <div class="bg-rose-50 p-6 rounded-xl border-2 border-rose-200">
+                    <h3 class="font-bold text-2xl text-rose-900 mb-4">Instructions:</h3>
                     <ol class="list-decimal pl-6 space-y-4">
                         <li>Roll a piece of your material to create a hollow cylinder (about 10 cm tall).</li>
                         <li>Use a single piece of tape to keep the cylinder closed.</li>
@@ -130,8 +130,8 @@
                     </ol>
                 </div>
 
-                <div class="bg-red-50 border-l-8 border-red-500 p-6 rounded-lg mt-8">
-                    <p class="font-bold text-red-800 text-2xl">📝 What to record:</p>
+                <div class="bg-white border-l-8 border-gray-800 shadow-md p-6 rounded-lg mt-8">
+                    <p class="font-bold text-gray-800 text-2xl">📝 What to record:</p>
                     <p class="mt-2">Write down the exact number of books it supported <strong>before the cylinder crumpled or collapsed</strong>.</p>
                 </div>
             </div>
@@ -140,38 +140,38 @@
         <!-- STEP 5: Test 3 - Folding & Adhesion -->
         <div id="step-5" class="step-container">
             <div class="text-center mb-8">
-                <span class="text-6xl mb-4 block">📏</span>
+                <span class="text-6xl mb-4 block">📐</span>
                 <h1 class="text-4xl md:text-5xl font-black text-gray-800 mb-6">Test 3: Folding & Adhesion</h1>
             </div>
             <div class="text-xl md:text-2xl leading-relaxed text-gray-700 space-y-6">
                 <p><strong>Goal:</strong> Check if the material keeps a shape when folded, and if liquid glue actually works on it.</p>
                 
-                <div class="bg-gray-50 p-6 rounded-xl border-2 border-gray-200">
-                    <h3 class="font-bold text-2xl text-teal-800 mb-4">Instructions:</h3>
+                <div class="bg-indigo-50 p-6 rounded-xl border-2 border-indigo-200">
+                    <h3 class="font-bold text-2xl text-indigo-900 mb-4">Instructions:</h3>
                     <ol class="list-decimal pl-6 space-y-4">
                         <li><strong>The Fold Test:</strong> Fold a piece of the material in half. Press the crease hard with your fingernail. Let it go. Does it open back up like a spring, or does it stay perfectly folded?</li>
                         <li><strong>The Glue Test:</strong> Put a small drop of school glue between two pieces of the material. Wait exactly 3 minutes, then try to pull them apart.</li>
                     </ol>
                 </div>
 
-                <div class="bg-red-50 border-l-8 border-red-500 p-6 rounded-lg mt-8">
-                    <p class="font-bold text-red-800 text-2xl">📝 What to record:</p>
-                    <p class="mt-2">Rate the folding from 1 to 5. Also, write down if the glue held them together tightly, or if they easily slipped apart.</p>
+                <div class="bg-white border-l-8 border-gray-800 shadow-md p-6 rounded-lg mt-8">
+                    <p class="font-bold text-gray-800 text-2xl">📝 What to record:</p>
+                    <p class="mt-2">Rate the folding from 1 to 5 <strong>(1 = Terrible, it pops right open; 5 = Excellent, it stays perfectly folded)</strong>. Also, write down if the glue held them together tightly, or if they easily slipped apart.</p>
                 </div>
             </div>
         </div>
 
-        <!-- STEP 6: Test 4 - Geometry (New Step) -->
+        <!-- STEP 6: Test 4 - Geometry -->
         <div id="step-6" class="step-container">
             <div class="text-center mb-8">
-                <span class="text-6xl mb-4 block">📐</span>
+                <span class="text-6xl mb-4 block">🔺</span>
                 <h1 class="text-4xl md:text-5xl font-black text-gray-800 mb-6">Test 4: The Geometry Test</h1>
             </div>
             <div class="text-xl md:text-2xl leading-relaxed text-gray-700 space-y-6">
                 <p><strong>Goal:</strong> Materials are weak on their own, but geometry makes them strong. Find out which shape you should use to build the framework of your bridge.</p>
                 
-                <div class="bg-gray-50 p-6 rounded-xl border-2 border-gray-200">
-                    <h3 class="font-bold text-2xl text-teal-800 mb-4">Instructions:</h3>
+                <div class="bg-emerald-50 p-6 rounded-xl border-2 border-emerald-200">
+                    <h3 class="font-bold text-2xl text-emerald-900 mb-4">Instructions:</h3>
                     <ol class="list-decimal pl-6 space-y-4">
                         <li>Roll 7 small pieces of normal printer paper into thin, tight tubes. Tape them so they don't unroll.</li>
                         <li><strong>Shape A (Square):</strong> Tape 4 of the tubes together at the corners to make a flat square.</li>
@@ -180,8 +180,8 @@
                     </ol>
                 </div>
 
-                <div class="bg-red-50 border-l-8 border-red-500 p-6 rounded-lg mt-8">
-                    <p class="font-bold text-red-800 text-2xl">📝 What to record:</p>
+                <div class="bg-white border-l-8 border-gray-800 shadow-md p-6 rounded-lg mt-8">
+                    <p class="font-bold text-gray-800 text-2xl">📝 What to record:</p>
                     <p class="mt-2">What happened to the Square? Did it keep its shape? What happened to the Triangle? Write down which shape is stronger against moving forces.</p>
                 </div>
             </div>
@@ -190,13 +190,13 @@
         <!-- STEP 7: Report -->
         <div id="step-7" class="step-container">
             <div class="text-center mb-8">
-                <span class="text-6xl mb-4 block">📝</span>
+                <span class="text-6xl mb-4 block">📄</span>
                 <h1 class="text-4xl md:text-5xl font-black text-gray-800 mb-6">Your Final Word Report</h1>
             </div>
             <div class="text-xl leading-relaxed text-gray-700 space-y-6">
                 <p>To finish this phase, you must create and upload a Microsoft Word document. It must contain the following exactly:</p>
                 
-                <ul class="bg-teal-50 p-6 rounded-xl border-2 border-teal-200 space-y-3 font-bold">
+                <ul class="bg-slate-100 p-6 rounded-xl border-2 border-slate-300 space-y-3 font-bold">
                     <li>✅ 1. A Project Title</li>
                     <li>✅ 2. Number of group members</li>
                     <li>✅ 3. Full names of all members</li>
@@ -205,44 +205,68 @@
                 </ul>
 
                 <h3 class="font-bold text-2xl mt-8">📊 Example Results Table:</h3>
-                <div class="overflow-x-auto text-lg">
+                <div class="overflow-x-auto text-lg shadow-md rounded-lg">
                     <table class="w-full border-collapse border border-gray-400 bg-white text-center">
                         <thead>
-                            <tr class="bg-gray-200">
-                                <th class="border border-gray-400 p-2">Material</th>
-                                <th class="border border-gray-400 p-2">Tension (Weight)</th>
-                                <th class="border border-gray-400 p-2">Compression (Books)</th>
-                                <th class="border border-gray-400 p-2">Folding/Glue (1-5)</th>
+                            <tr class="bg-gray-800 text-white">
+                                <th class="border border-gray-400 p-3">Material</th>
+                                <th class="border border-gray-400 p-3">Tension (Weight)</th>
+                                <th class="border border-gray-400 p-3">Compression (Books)</th>
+                                <th class="border border-gray-400 p-3">Folding/Glue (1-5)</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td class="border border-gray-400 p-2 text-gray-500 italic">Printer Paper</td>
-                                <td class="border border-gray-400 p-2">...</td>
-                                <td class="border border-gray-400 p-2">...</td>
-                                <td class="border border-gray-400 p-2">...</td>
+                        <tbody class="text-gray-600 font-semibold">
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-400 p-3 text-gray-800">Printer Paper</td>
+                                <td class="border border-gray-400 p-3">...</td>
+                                <td class="border border-gray-400 p-3">...</td>
+                                <td class="border border-gray-400 p-3">...</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 bg-gray-50">
+                                <td class="border border-gray-400 p-3 text-gray-800">Aluminum Foil</td>
+                                <td class="border border-gray-400 p-3">...</td>
+                                <td class="border border-gray-400 p-3">...</td>
+                                <td class="border border-gray-400 p-3">...</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-400 p-3 text-gray-800">Toilet Paper</td>
+                                <td class="border border-gray-400 p-3">...</td>
+                                <td class="border border-gray-400 p-3">...</td>
+                                <td class="border border-gray-400 p-3">...</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 bg-gray-50">
+                                <td class="border border-gray-400 p-3 text-gray-800">Newspaper</td>
+                                <td class="border border-gray-400 p-3">...</td>
+                                <td class="border border-gray-400 p-3">...</td>
+                                <td class="border border-gray-400 p-3">...</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-400 p-3 text-gray-800">Baking Paper</td>
+                                <td class="border border-gray-400 p-3">...</td>
+                                <td class="border border-gray-400 p-3">...</td>
+                                <td class="border border-gray-400 p-3">...</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <div class="bg-purple-100 border-l-8 border-purple-500 p-6 rounded-lg mt-8">
-                    <h3 class="font-bold text-2xl text-purple-900 mb-2">🧠 The Final Diagnosis:</h3>
-                    <p class="text-lg mb-2">Copy these exact two questions into your Word document and answer them:</p>
-                    <ol class="list-decimal pl-6 italic text-purple-800 mt-2 font-bold space-y-2">
-                        <li>"If you had to build pillars (compression) and suspension cables (tension), which tested material would you choose for each part and why? Use your table data to justify your answer."</li>
-                        <li>"Based on Test 4, which geometric shape must you use over and over again to build the strong framework of your bridge, and why?"</li>
+                <div class="bg-gray-800 text-white p-6 rounded-lg mt-8 shadow-lg">
+                    <h3 class="font-bold text-2xl mb-2 text-yellow-400">🧠 The Final Diagnosis:</h3>
+                    <p class="text-lg mb-2 text-gray-200">Copy these exact two questions into your Word document and answer them:</p>
+                    <ol class="list-decimal pl-6 italic font-bold space-y-4 mt-4">
+                        <li class="text-xl">"If you had to build pillars (compression) and suspension cables (tension), which tested material would you choose for each part and why? Use your table data to justify your answer."</li>
+                        <li class="text-xl">"Based on Test 4, which geometric shape must you use over and over again to build the strong framework of your bridge, and why?"</li>
                     </ol>
                 </div>
             </div>
         </div>
 
         <!-- Navigation Buttons -->
-        <div class="mt-12 flex justify-between border-t-2 border-gray-100 pt-8">
+        <div class="mt-12 flex justify-between border-t-2 border-gray-200 pt-8">
             <button id="btn-prev" class="btn hidden bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-4 px-8 rounded-xl text-2xl" onclick="navigate(-1)">
                 ⬅️ Back
             </button>
-            <button id="btn-next" class="btn bg-teal-500 hover:bg-teal-600 text-white font-bold py-4 px-8 rounded-xl text-2xl ml-auto shadow-lg" onclick="navigate(1)">
+            <button id="btn-next" class="btn bg-gray-800 hover:bg-black text-white font-bold py-4 px-8 rounded-xl text-2xl ml-auto shadow-lg" onclick="navigate(1)">
                 Next ➡️
             </button>
         </div>
@@ -251,7 +275,18 @@
 
     <script>
         let currentStep = 1;
-        const totalSteps = 7; // Updated to 7 steps
+        const totalSteps = 7; 
+        
+        // Array of Tailwind background colors for each step
+        const bgColors = [
+            'bg-teal-50',    // Step 1: Intro
+            'bg-blue-50',    // Step 2: Groups
+            'bg-amber-50',   // Step 3: Tension
+            'bg-rose-50',    // Step 4: Compression
+            'bg-indigo-50',  // Step 5: Folding
+            'bg-emerald-50', // Step 6: Geometry
+            'bg-slate-200'   // Step 7: Report
+        ];
 
         function navigate(direction) {
             // Hide current step
@@ -272,6 +307,10 @@
             const progress = (currentStep / totalSteps) * 100;
             document.getElementById('progress-bar').style.width = `${progress}%`;
             document.getElementById('progress-text').innerText = `Step ${currentStep} of ${totalSteps}`;
+
+            // Update background color smoothly
+            document.body.classList.remove(...bgColors);
+            document.body.classList.add(bgColors[currentStep - 1]);
 
             // Handle Prev Button
             if (currentStep === 1) {
