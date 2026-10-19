@@ -36,10 +36,10 @@
     <!-- Progress Bar -->
     <div class="w-full max-w-4xl mb-8">
         <div class="flex justify-between mb-2 text-lg font-bold text-teal-700" id="progress-text">
-            <span>Step 1 of 4</span>
+            <span>Step 1 of 7</span>
         </div>
         <div class="w-full bg-gray-300 rounded-full h-4">
-            <div class="bg-teal-600 h-4 rounded-full transition-all duration-500" id="progress-bar" style="width: 25%"></div>
+            <div class="bg-teal-600 h-4 rounded-full transition-all duration-500" id="progress-bar" style="width: 14.28%"></div>
         </div>
     </div>
 
@@ -85,34 +85,110 @@
             </div>
         </div>
 
-        <!-- STEP 3: Testing -->
+        <!-- STEP 3: Test 1 - Tension -->
         <div id="step-3" class="step-container">
             <div class="text-center mb-8">
-                <span class="text-6xl mb-4 block">🔬</span>
-                <h1 class="text-4xl md:text-5xl font-black text-gray-800 mb-6">The Material Lab</h1>
+                <span class="text-6xl mb-4 block">🔗</span>
+                <h1 class="text-4xl md:text-5xl font-black text-gray-800 mb-6">Test 1: Tension (Pulling)</h1>
             </div>
-            <div class="text-xl md:text-2xl leading-relaxed text-gray-700 space-y-8">
-                <p>Before building, you must test the materials (printer paper, aluminum foil, toilet paper, etc.). Write down <strong>every weight you test</strong> and note exactly when the paper breaks to find your maximum viable weight.</p>
+            <div class="text-xl md:text-2xl leading-relaxed text-gray-700 space-y-6">
+                <p><strong>Goal:</strong> Find out how much pulling force the material can take before it rips. This is important for suspension cables.</p>
                 
-                <div class="grid grid-cols-1 gap-6 mt-6">
-                    <div class="bg-gray-50 p-6 rounded-xl border-2 border-gray-200">
-                        <h3 class="font-bold text-2xl text-teal-800 mb-2">1. Tension (Pulling)</h3>
-                        <p>Tape a strip of paper to the table, hang a cup from it, and add weights one by one. <em>How much weight can it hold before tearing?</em></p>
-                    </div>
-                    <div class="bg-gray-50 p-6 rounded-xl border-2 border-gray-200">
-                        <h3 class="font-bold text-2xl text-teal-800 mb-2">2. Compression (Squashing)</h3>
-                        <p>Roll the paper into a cylinder. Place books on top one by one. <em>How many books can it support before collapsing?</em></p>
-                    </div>
-                    <div class="bg-gray-50 p-6 rounded-xl border-2 border-gray-200">
-                        <h3 class="font-bold text-2xl text-teal-800 mb-2">3. Folding & Adhesion</h3>
-                        <p>Fold the paper to see if it keeps its shape. Glue two pieces together. <em>Does the glue work? Does it stay folded?</em></p>
-                    </div>
+                <div class="bg-gray-50 p-6 rounded-xl border-2 border-gray-200">
+                    <h3 class="font-bold text-2xl text-teal-800 mb-4">Instructions:</h3>
+                    <ol class="list-decimal pl-6 space-y-4">
+                        <li>Cut a strip of your material exactly <strong>3 cm wide and 15 cm long</strong>.</li>
+                        <li>Tape the top edge of the strip securely to the edge of your desk.</li>
+                        <li>Tape a small plastic cup to the bottom edge of the strip.</li>
+                        <li>Gently place weights (coins or small lab weights) into the cup, <strong>one by one</strong>.</li>
+                    </ol>
+                </div>
+
+                <div class="bg-red-50 border-l-8 border-red-500 p-6 rounded-lg mt-8">
+                    <p class="font-bold text-red-800 text-2xl">📝 What to record:</p>
+                    <p class="mt-2">Count the exact number of weights the paper held <strong>just before it broke</strong>. Write this number down in your draft table!</p>
                 </div>
             </div>
         </div>
 
-        <!-- STEP 4: Report -->
+        <!-- STEP 4: Test 2 - Compression -->
         <div id="step-4" class="step-container">
+            <div class="text-center mb-8">
+                <span class="text-6xl mb-4 block">📚</span>
+                <h1 class="text-4xl md:text-5xl font-black text-gray-800 mb-6">Test 2: Compression (Squashing)</h1>
+            </div>
+            <div class="text-xl md:text-2xl leading-relaxed text-gray-700 space-y-6">
+                <p><strong>Goal:</strong> Find out how much weight the material can support from above before it crushes. This is important for bridge pillars.</p>
+                
+                <div class="bg-gray-50 p-6 rounded-xl border-2 border-gray-200">
+                    <h3 class="font-bold text-2xl text-teal-800 mb-4">Instructions:</h3>
+                    <ol class="list-decimal pl-6 space-y-4">
+                        <li>Roll a piece of your material to create a hollow cylinder (about 10 cm tall).</li>
+                        <li>Use a single piece of tape to keep the cylinder closed.</li>
+                        <li>Stand the cylinder upright on a flat table.</li>
+                        <li>Carefully place books on top of the cylinder, <strong>one by one</strong>. Make sure you balance them perfectly in the center!</li>
+                    </ol>
+                </div>
+
+                <div class="bg-red-50 border-l-8 border-red-500 p-6 rounded-lg mt-8">
+                    <p class="font-bold text-red-800 text-2xl">📝 What to record:</p>
+                    <p class="mt-2">Write down the exact number of books it supported <strong>before the cylinder crumpled or collapsed</strong>.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- STEP 5: Test 3 - Folding & Adhesion -->
+        <div id="step-5" class="step-container">
+            <div class="text-center mb-8">
+                <span class="text-6xl mb-4 block">📏</span>
+                <h1 class="text-4xl md:text-5xl font-black text-gray-800 mb-6">Test 3: Folding & Adhesion</h1>
+            </div>
+            <div class="text-xl md:text-2xl leading-relaxed text-gray-700 space-y-6">
+                <p><strong>Goal:</strong> Check if the material keeps a shape when folded, and if liquid glue actually works on it.</p>
+                
+                <div class="bg-gray-50 p-6 rounded-xl border-2 border-gray-200">
+                    <h3 class="font-bold text-2xl text-teal-800 mb-4">Instructions:</h3>
+                    <ol class="list-decimal pl-6 space-y-4">
+                        <li><strong>The Fold Test:</strong> Fold a piece of the material in half. Press the crease hard with your fingernail. Let it go. Does it open back up like a spring, or does it stay perfectly folded?</li>
+                        <li><strong>The Glue Test:</strong> Put a small drop of school glue between two pieces of the material. Wait exactly 3 minutes, then try to pull them apart.</li>
+                    </ol>
+                </div>
+
+                <div class="bg-red-50 border-l-8 border-red-500 p-6 rounded-lg mt-8">
+                    <p class="font-bold text-red-800 text-2xl">📝 What to record:</p>
+                    <p class="mt-2">Rate the folding from 1 to 5. Also, write down if the glue held them together tightly, or if they easily slipped apart.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- STEP 6: Test 4 - Geometry (New Step) -->
+        <div id="step-6" class="step-container">
+            <div class="text-center mb-8">
+                <span class="text-6xl mb-4 block">📐</span>
+                <h1 class="text-4xl md:text-5xl font-black text-gray-800 mb-6">Test 4: The Geometry Test</h1>
+            </div>
+            <div class="text-xl md:text-2xl leading-relaxed text-gray-700 space-y-6">
+                <p><strong>Goal:</strong> Materials are weak on their own, but geometry makes them strong. Find out which shape you should use to build the framework of your bridge.</p>
+                
+                <div class="bg-gray-50 p-6 rounded-xl border-2 border-gray-200">
+                    <h3 class="font-bold text-2xl text-teal-800 mb-4">Instructions:</h3>
+                    <ol class="list-decimal pl-6 space-y-4">
+                        <li>Roll 7 small pieces of normal printer paper into thin, tight tubes. Tape them so they don't unroll.</li>
+                        <li><strong>Shape A (Square):</strong> Tape 4 of the tubes together at the corners to make a flat square.</li>
+                        <li><strong>Shape B (Triangle):</strong> Tape the other 3 tubes together at the corners to make a flat triangle.</li>
+                        <li>Stand both shapes up on the table. Gently push the top corner of the Square side-to-side. Then, do the same to the top corner of the Triangle.</li>
+                    </ol>
+                </div>
+
+                <div class="bg-red-50 border-l-8 border-red-500 p-6 rounded-lg mt-8">
+                    <p class="font-bold text-red-800 text-2xl">📝 What to record:</p>
+                    <p class="mt-2">What happened to the Square? Did it keep its shape? What happened to the Triangle? Write down which shape is stronger against moving forces.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- STEP 7: Report -->
+        <div id="step-7" class="step-container">
             <div class="text-center mb-8">
                 <span class="text-6xl mb-4 block">📝</span>
                 <h1 class="text-4xl md:text-5xl font-black text-gray-800 mb-6">Your Final Word Report</h1>
@@ -124,8 +200,8 @@
                     <li>✅ 1. A Project Title</li>
                     <li>✅ 2. Number of group members</li>
                     <li>✅ 3. Full names of all members</li>
-                    <li>✅ 4. Your Results Table</li>
-                    <li>✅ 5. The Structural Diagnosis</li>
+                    <li>✅ 4. Your Results Table (from Tests 1, 2, and 3)</li>
+                    <li>✅ 5. The Structural & Geometry Diagnosis</li>
                 </ul>
 
                 <h3 class="font-bold text-2xl mt-8">📊 Example Results Table:</h3>
@@ -151,9 +227,12 @@
                 </div>
 
                 <div class="bg-purple-100 border-l-8 border-purple-500 p-6 rounded-lg mt-8">
-                    <h3 class="font-bold text-2xl text-purple-900 mb-2">🧠 The Structural Diagnosis:</h3>
-                    <p class="text-lg">Copy this exact question into your Word document and answer it:</p>
-                    <p class="italic text-purple-800 mt-2 font-bold">"If you had to build pillars (which support compression) and suspension cables (which support tension), which tested material would you choose for each part and why? Use your table data to justify your answer."</p>
+                    <h3 class="font-bold text-2xl text-purple-900 mb-2">🧠 The Final Diagnosis:</h3>
+                    <p class="text-lg mb-2">Copy these exact two questions into your Word document and answer them:</p>
+                    <ol class="list-decimal pl-6 italic text-purple-800 mt-2 font-bold space-y-2">
+                        <li>"If you had to build pillars (compression) and suspension cables (tension), which tested material would you choose for each part and why? Use your table data to justify your answer."</li>
+                        <li>"Based on Test 4, which geometric shape must you use over and over again to build the strong framework of your bridge, and why?"</li>
+                    </ol>
                 </div>
             </div>
         </div>
@@ -172,7 +251,7 @@
 
     <script>
         let currentStep = 1;
-        const totalSteps = 4;
+        const totalSteps = 7; // Updated to 7 steps
 
         function navigate(direction) {
             // Hide current step
