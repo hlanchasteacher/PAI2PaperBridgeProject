@@ -33,7 +33,7 @@
 <body class="min-h-screen flex flex-col items-center justify-center p-4 bg-teal-50 transition-colors duration-700">
 
     <!-- Progress Bar -->
-    <div class="w-full max-w-4xl mb-8">
+    <div class="w-full max-w-4xl mb-8 mt-4">
         <div class="flex justify-between mb-2 text-lg font-bold text-gray-700" id="progress-text">
             <span>Step 1 of 8</span>
         </div>
@@ -43,7 +43,7 @@
     </div>
 
     <!-- Main Content Container -->
-    <div class="bg-white rounded-3xl shadow-xl w-full max-w-4xl p-8 md:p-12 border-t-8 border-gray-800">
+    <div class="bg-white rounded-3xl shadow-xl w-full max-w-4xl p-8 md:p-12 border-t-8 border-gray-800 mb-8">
         
         <!-- STEP 1: Introduction -->
         <div id="step-1" class="step-container step-active">
@@ -220,16 +220,7 @@
             </div>
             <div class="text-xl leading-relaxed text-gray-700 space-y-6">
                 
-                <!-- TODDLE UPLOAD WARNING -->
-                <div class="bg-blue-100 border-l-8 border-blue-600 p-6 rounded-lg mb-8 shadow-md">
-                    <p class="font-black text-blue-900 text-3xl flex items-center gap-3 mb-2"><span>🚀</span> Uploading to Toddle</p>
-                    <p class="text-xl text-blue-800 mb-4">When your Word document is finished, you must submit it on <strong>Toddle</strong>.</p>
-                    <div class="bg-red-100 border-2 border-red-500 p-4 rounded text-red-800 font-bold shadow-inner">
-                        <span class="text-2xl mr-2">⚠️</span> CRITICAL: Every single member of the group MUST upload the file to their own Toddle account, even if it is the exact same document!
-                    </div>
-                </div>
-
-                <p>Your Microsoft Word document must contain the following exactly:</p>
+                <p>To finish this phase, you must create and upload a Microsoft Word document. It must contain the following exactly:</p>
                 
                 <ul class="bg-slate-100 p-6 rounded-xl border-2 border-slate-300 space-y-3 font-bold">
                     <li>✅ 1. A Project Title</li>
@@ -293,12 +284,22 @@
                         <li>"Based on Test 5 (Geometry), which shape must you use over and over again to build the framework of your bridge, and why?"</li>
                     </ol>
                 </div>
+
+                <!-- TODDLE UPLOAD WARNING MOVED TO THE END -->
+                <div class="bg-blue-100 border-l-8 border-blue-600 p-6 rounded-lg mt-12 shadow-md">
+                    <p class="font-black text-blue-900 text-3xl flex items-center gap-3 mb-2"><span>🚀</span> Uploading to Toddle</p>
+                    <p class="text-xl text-blue-800 mb-4">When your Word document is finished, you must submit it on <strong>Toddle</strong>.</p>
+                    <div class="bg-red-100 border-2 border-red-500 p-4 rounded text-red-800 font-bold shadow-inner">
+                        <span class="text-2xl mr-2">⚠️</span> CRITICAL: Every single member of the group MUST upload the file to their own Toddle account, even if it is the exact same document!
+                    </div>
+                </div>
+
             </div>
         </div>
 
         <!-- Navigation Buttons -->
-        <div class="mt-12 flex justify-between border-t-2 border-gray-200 pt-8">
-            <button id="btn-prev" class="btn hidden bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-4 px-8 rounded-xl text-2xl" onclick="navigate(-1)">
+        <div class="mt-12 flex justify-between border-t-2 border-gray-200 pt-8 w-full max-w-4xl">
+            <button id="btn-prev" class="btn hidden bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-4 px-8 rounded-xl text-2xl shadow-md" onclick="navigate(-1)">
                 ⬅️ Back
             </button>
             <button id="btn-next" class="btn bg-gray-800 hover:bg-black text-white font-bold py-4 px-8 rounded-xl text-2xl ml-auto shadow-lg" onclick="navigate(1)">
@@ -336,6 +337,9 @@
             
             // Update UI
             updateUI();
+
+            // Smoothly scroll to the top of the page
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function updateUI() {
