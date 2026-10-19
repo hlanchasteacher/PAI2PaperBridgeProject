@@ -30,16 +30,15 @@
         }
     </style>
 </head>
-<!-- Added transition-colors so the background shifts smoothly between steps -->
 <body class="min-h-screen flex flex-col items-center justify-center p-4 bg-teal-50 transition-colors duration-700">
 
     <!-- Progress Bar -->
     <div class="w-full max-w-4xl mb-8">
         <div class="flex justify-between mb-2 text-lg font-bold text-gray-700" id="progress-text">
-            <span>Step 1 of 7</span>
+            <span>Step 1 of 8</span>
         </div>
         <div class="w-full bg-gray-300 rounded-full h-4 shadow-inner">
-            <div class="bg-gray-800 h-4 rounded-full transition-all duration-500" id="progress-bar" style="width: 14.28%"></div>
+            <div class="bg-gray-800 h-4 rounded-full transition-all duration-500" id="progress-bar" style="width: 12.5%"></div>
         </div>
     </div>
 
@@ -161,14 +160,40 @@
             </div>
         </div>
 
-        <!-- STEP 6: Test 4 - Geometry -->
+        <!-- STEP 6: Test 4 - Zigzag Profile -->
         <div id="step-6" class="step-container">
             <div class="text-center mb-8">
-                <span class="text-6xl mb-4 block">🔺</span>
-                <h1 class="text-4xl md:text-5xl font-black text-gray-800 mb-6">Test 4: The Geometry Test</h1>
+                <span class="text-6xl mb-4 block">〰️</span>
+                <h1 class="text-4xl md:text-5xl font-black text-gray-800 mb-6">Test 4: Bending & The Zigzag</h1>
             </div>
             <div class="text-xl md:text-2xl leading-relaxed text-gray-700 space-y-6">
-                <p><strong>Goal:</strong> Materials are weak on their own, but geometry makes them strong. Find out which shape you should use to build the framework of your bridge.</p>
+                <p><strong>Goal:</strong> Flat paper bends and falls easily. Discover how adding a "profile" (folding it into a zigzag) completely changes its stiffness. This is crucial for your bridge deck.</p>
+                
+                <div class="bg-cyan-50 p-6 rounded-xl border-2 border-cyan-200">
+                    <h3 class="font-bold text-2xl text-cyan-900 mb-4">Instructions:</h3>
+                    <ol class="list-decimal pl-6 space-y-4">
+                        <li>Place two books on your desk about 15 cm apart to create a gap (a ravine).</li>
+                        <li><strong>The Flat Test:</strong> Place a flat piece of paper across the gap. Place a single coin or small weight in the middle. Watch it fall through.</li>
+                        <li><strong>The Zigzag Test:</strong> Take a new piece of paper. Fold it back and forth like an accordion or a fan (zigzag shape).</li>
+                        <li>Place the zigzag paper across the same gap. Now, carefully place coins or weights on top of it, <strong>one by one</strong>.</li>
+                    </ol>
+                </div>
+
+                <div class="bg-white border-l-8 border-gray-800 shadow-md p-6 rounded-lg mt-8">
+                    <p class="font-bold text-gray-800 text-2xl">📝 What to record:</p>
+                    <p class="mt-2">How many coins did the flat paper hold? (Probably 0). How many coins did the <strong>zigzag paper</strong> hold? Write this number in your table!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- STEP 7: Test 5 - Geometry -->
+        <div id="step-7" class="step-container">
+            <div class="text-center mb-8">
+                <span class="text-6xl mb-4 block">🔺</span>
+                <h1 class="text-4xl md:text-5xl font-black text-gray-800 mb-6">Test 5: The Geometry Test</h1>
+            </div>
+            <div class="text-xl md:text-2xl leading-relaxed text-gray-700 space-y-6">
+                <p><strong>Goal:</strong> Find out which geometric shape you should use to build the framework of your bridge.</p>
                 
                 <div class="bg-emerald-50 p-6 rounded-xl border-2 border-emerald-200">
                     <h3 class="font-bold text-2xl text-emerald-900 mb-4">Instructions:</h3>
@@ -187,37 +212,49 @@
             </div>
         </div>
 
-        <!-- STEP 7: Report -->
-        <div id="step-7" class="step-container">
+        <!-- STEP 8: Report -->
+        <div id="step-8" class="step-container">
             <div class="text-center mb-8">
                 <span class="text-6xl mb-4 block">📄</span>
                 <h1 class="text-4xl md:text-5xl font-black text-gray-800 mb-6">Your Final Word Report</h1>
             </div>
             <div class="text-xl leading-relaxed text-gray-700 space-y-6">
-                <p>To finish this phase, you must create and upload a Microsoft Word document. It must contain the following exactly:</p>
+                
+                <!-- TODDLE UPLOAD WARNING -->
+                <div class="bg-blue-100 border-l-8 border-blue-600 p-6 rounded-lg mb-8 shadow-md">
+                    <p class="font-black text-blue-900 text-3xl flex items-center gap-3 mb-2"><span>🚀</span> Uploading to Toddle</p>
+                    <p class="text-xl text-blue-800 mb-4">When your Word document is finished, you must submit it on <strong>Toddle</strong>.</p>
+                    <div class="bg-red-100 border-2 border-red-500 p-4 rounded text-red-800 font-bold shadow-inner">
+                        <span class="text-2xl mr-2">⚠️</span> CRITICAL: Every single member of the group MUST upload the file to their own Toddle account, even if it is the exact same document!
+                    </div>
+                </div>
+
+                <p>Your Microsoft Word document must contain the following exactly:</p>
                 
                 <ul class="bg-slate-100 p-6 rounded-xl border-2 border-slate-300 space-y-3 font-bold">
                     <li>✅ 1. A Project Title</li>
                     <li>✅ 2. Number of group members</li>
                     <li>✅ 3. Full names of all members</li>
-                    <li>✅ 4. Your Results Table (from Tests 1, 2, and 3)</li>
-                    <li>✅ 5. The Structural & Geometry Diagnosis</li>
+                    <li>✅ 4. Your Results Table (from Tests 1 to 4)</li>
+                    <li>✅ 5. The Structural Diagnosis</li>
                 </ul>
 
                 <h3 class="font-bold text-2xl mt-8">📊 Example Results Table:</h3>
-                <div class="overflow-x-auto text-lg shadow-md rounded-lg">
+                <div class="overflow-x-auto text-base shadow-md rounded-lg">
                     <table class="w-full border-collapse border border-gray-400 bg-white text-center">
                         <thead>
                             <tr class="bg-gray-800 text-white">
                                 <th class="border border-gray-400 p-3">Material</th>
                                 <th class="border border-gray-400 p-3">Tension (Weight)</th>
                                 <th class="border border-gray-400 p-3">Compression (Books)</th>
-                                <th class="border border-gray-400 p-3">Folding/Glue (1-5)</th>
+                                <th class="border border-gray-400 p-3">Folding (1-5)</th>
+                                <th class="border border-gray-400 p-3">Zigzag (Weights)</th>
                             </tr>
                         </thead>
                         <tbody class="text-gray-600 font-semibold">
                             <tr class="hover:bg-gray-50">
                                 <td class="border border-gray-400 p-3 text-gray-800">Printer Paper</td>
+                                <td class="border border-gray-400 p-3">...</td>
                                 <td class="border border-gray-400 p-3">...</td>
                                 <td class="border border-gray-400 p-3">...</td>
                                 <td class="border border-gray-400 p-3">...</td>
@@ -227,9 +264,11 @@
                                 <td class="border border-gray-400 p-3">...</td>
                                 <td class="border border-gray-400 p-3">...</td>
                                 <td class="border border-gray-400 p-3">...</td>
+                                <td class="border border-gray-400 p-3">...</td>
                             </tr>
                             <tr class="hover:bg-gray-50">
                                 <td class="border border-gray-400 p-3 text-gray-800">Toilet Paper</td>
+                                <td class="border border-gray-400 p-3">...</td>
                                 <td class="border border-gray-400 p-3">...</td>
                                 <td class="border border-gray-400 p-3">...</td>
                                 <td class="border border-gray-400 p-3">...</td>
@@ -237,11 +276,6 @@
                             <tr class="hover:bg-gray-50 bg-gray-50">
                                 <td class="border border-gray-400 p-3 text-gray-800">Newspaper</td>
                                 <td class="border border-gray-400 p-3">...</td>
-                                <td class="border border-gray-400 p-3">...</td>
-                                <td class="border border-gray-400 p-3">...</td>
-                            </tr>
-                            <tr class="hover:bg-gray-50">
-                                <td class="border border-gray-400 p-3 text-gray-800">Baking Paper</td>
                                 <td class="border border-gray-400 p-3">...</td>
                                 <td class="border border-gray-400 p-3">...</td>
                                 <td class="border border-gray-400 p-3">...</td>
@@ -252,10 +286,11 @@
 
                 <div class="bg-gray-800 text-white p-6 rounded-lg mt-8 shadow-lg">
                     <h3 class="font-bold text-2xl mb-2 text-yellow-400">🧠 The Final Diagnosis:</h3>
-                    <p class="text-lg mb-2 text-gray-200">Copy these exact two questions into your Word document and answer them:</p>
-                    <ol class="list-decimal pl-6 italic font-bold space-y-4 mt-4">
-                        <li class="text-xl">"If you had to build pillars (compression) and suspension cables (tension), which tested material would you choose for each part and why? Use your table data to justify your answer."</li>
-                        <li class="text-xl">"Based on Test 4, which geometric shape must you use over and over again to build the strong framework of your bridge, and why?"</li>
+                    <p class="text-lg mb-2 text-gray-200">Copy these exact questions into your Word document and answer them:</p>
+                    <ol class="list-decimal pl-6 italic font-bold space-y-4 mt-4 text-lg">
+                        <li>"Based on your table, which material is best for pillars (compression) and which is best for suspension cables (tension)? Why?"</li>
+                        <li>"Based on Test 4 (Zigzag), why shouldn't you use a completely flat piece of paper for the floor (deck) of your bridge?"</li>
+                        <li>"Based on Test 5 (Geometry), which shape must you use over and over again to build the framework of your bridge, and why?"</li>
                     </ol>
                 </div>
             </div>
@@ -275,7 +310,7 @@
 
     <script>
         let currentStep = 1;
-        const totalSteps = 7; 
+        const totalSteps = 8;
         
         // Array of Tailwind background colors for each step
         const bgColors = [
@@ -284,8 +319,9 @@
             'bg-amber-50',   // Step 3: Tension
             'bg-rose-50',    // Step 4: Compression
             'bg-indigo-50',  // Step 5: Folding
-            'bg-emerald-50', // Step 6: Geometry
-            'bg-slate-200'   // Step 7: Report
+            'bg-cyan-50',    // Step 6: Zigzag
+            'bg-emerald-50', // Step 7: Geometry
+            'bg-slate-200'   // Step 8: Report
         ];
 
         function navigate(direction) {
